@@ -1,6 +1,7 @@
 import Kitura
 import KituraOpenAPI
 import ElasticSwift
+//import ElasticSwiftNetworking
 
 public class App {
 
@@ -9,7 +10,8 @@ public class App {
     let esClient: ElasticClient
 
     public init() throws {
-        let settings = Settings.default
+//        let settings = Settings(forHost: "http://localhost:9200", withCredentials: BasicClientCredential(username: "elastic", password: "elastic"), adaptorConfig: URLSessionAdaptorConfiguration.default)
+        let settings = Settings.default("http://localhost:9200")
         self.esClient = ElasticClient(settings: settings)
     }
 

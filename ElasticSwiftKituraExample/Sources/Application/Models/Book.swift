@@ -17,6 +17,8 @@ public struct Book: Codable {
 
 }
 
+extension Book: Equatable {}
+
 public struct BookQuery: QueryParams {
     public let name: String?
 }

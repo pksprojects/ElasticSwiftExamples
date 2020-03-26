@@ -11,7 +11,7 @@ let package = Package(
         .package(url: "https://github.com/IBM-Swift/Kitura", from: "2.7.1"),
         .package(url: "https://github.com/IBM-Swift/Kitura-OpenAPI.git", from: "1.2.1"),
         .package(url: "https://github.com/IBM-Swift/HeliumLogger.git", from: "1.8.1"),
-        .package(url: "https://github.com/pksprojects/ElasticSwift.git", from: "1.0.0-alpha.9")
+        .package(url: "https://github.com/pksprojects/ElasticSwift.git", from: "1.0.0-alpha.10")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.

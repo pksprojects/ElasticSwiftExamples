@@ -17,16 +17,20 @@ extension App {
 
     func queryGetHandler(query: BookQuery, respondWith: @escaping ([Book]?, RequestError?) -> Void) {
         // Filter data using query parameters provided to the application
-        let q: Query;
-        if let bookName = query.name {
-            q = QueryBuilders.matchQuery().set(field: "name").set(value: bookName).query
-        } else {
-            q = QueryBuilders.matchAllQuery().query
-        }
         do {
-            let searchRequest = try SearchRequestBuilder { builder in
-                builder.set(query: q).set(indices: App.indexName)
-            } .build()
+            let q: Query;
+            if let bookName = query.name {
+                q = try QueryBuilders.matchQuery()
+                    .set(field: "name")
+                    .set(value: bookName)
+                    .build()
+            } else {
+                q = MatchAllQuery()
+            }
+            let searchRequest = try SearchRequestBuilder()
+                .set(query: q)
+                .set(indices: App.indexName)
+                .build()
             esClient.search(searchRequest) { (result: Result<SearchResponse<Book>, Error>) -> Void in
                 switch result {
                 case .success(let response):
