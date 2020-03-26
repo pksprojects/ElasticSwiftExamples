@@ -135,21 +135,22 @@ class SearchViewController: UITableViewController, UISearchResultsUpdating {
     }
 
     func doSearch(value: String) {
-        let matchQuery = QueryBuilders.matchQuery()
-            .set(field: "text_entry")
-            .set(value: value)
-            .query
-        
         do {
             
-            let searchRequest = try SearchRequestBuilder { builder in
-                builder.set(indices: "shakespeare")
-                    .set(size: 1000)
-                if !value.isEmpty {
-                    builder.set(query: matchQuery)
-                }
-            } .build()
+            let matchQuery = try QueryBuilders.matchQuery()
+                .set(field: "text_entry")
+                .set(value: value)
+                .build()
             
+            let builder = SearchRequestBuilder()
+                .set(indices: "shakespeare")
+                .set(size: 1000)
+            
+            if !value.isEmpty {
+                builder.set(query: matchQuery)
+            }
+            
+            let searchRequest = try builder.build()
             self.client?.search(searchRequest, completionHandler: self.handler)
             
         } catch {
@@ -181,4 +182,6 @@ struct Shakespeare: Codable {
         case textEntry = "text_entry"
     }
 }
+
+extension Shakespeare: Equatable {}
 
