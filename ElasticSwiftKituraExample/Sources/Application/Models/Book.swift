@@ -8,13 +8,11 @@ import KituraContracts
 
 // Book is a sample struct used in the Codable routes
 public struct Book: Codable {
-
-    //MARK: Properties
+    // MARK: Properties
 
     var name: String
     var author: String
     var rating: Int
-
 }
 
 extension Book: Equatable {}

@@ -1,10 +1,9 @@
+import ElasticSwift
 import Kitura
 import KituraOpenAPI
-import ElasticSwift
-//import ElasticSwiftNetworking
+// import ElasticSwiftNetworking
 
 public class App {
-
     let router = Router()
 
     let esClient: ElasticClient
@@ -12,7 +11,7 @@ public class App {
     public init() throws {
 //        let settings = Settings(forHost: "http://localhost:9200", withCredentials: BasicClientCredential(username: "elastic", password: "elastic"), adaptorConfig: URLSessionAdaptorConfiguration.default)
         let settings = Settings.default("http://localhost:9200")
-        self.esClient = ElasticClient(settings: settings)
+        esClient = ElasticClient(settings: settings)
     }
 
     func postInit() throws {
