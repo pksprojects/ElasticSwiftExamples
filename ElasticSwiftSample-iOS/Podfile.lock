@@ -1,59 +1,63 @@
 PODS:
-  - CNIOAtomics (2.9.0)
-  - CNIODarwin (2.9.0)
-  - CNIOHTTPParser (2.9.0)
-  - CNIOLinux (2.9.0)
-  - CNIOSHA1 (2.9.0)
-  - ElasticSwift (1.0.0-alpha.10):
-    - ElasticSwiftCodableUtils (= 1.0.0-alpha.10)
-    - ElasticSwiftCore (= 1.0.0-alpha.10)
-    - ElasticSwiftNetworking (= 1.0.0-alpha.10)
-    - ElasticSwiftQueryDSL (= 1.0.0-alpha.10)
-    - Logging (~> 1.1.1)
-    - SwiftNIO (~> 2.9.0)
-    - SwiftNIOConcurrencyHelpers (~> 2.9.0)
-    - SwiftNIOFoundationCompat (~> 2.9.0)
-    - SwiftNIOHTTP1 (~> 2.9.0)
-    - SwiftNIOTLS (~> 2.9.0)
-    - SwiftNIOTransportServices (~> 1.2.0)
-  - ElasticSwiftCodableUtils (1.0.0-alpha.10)
-  - ElasticSwiftCore (1.0.0-alpha.10):
-    - Logging (~> 1.1.1)
-    - SwiftNIO (~> 2.9.0)
-    - SwiftNIOHTTP1 (~> 2.9.0)
-  - ElasticSwiftNetworking (1.0.0-alpha.10):
-    - ElasticSwiftCore (= 1.0.0-alpha.10)
-    - Logging (~> 1.1.1)
-    - SwiftNIOHTTP1 (~> 2.9.0)
-  - ElasticSwiftQueryDSL (1.0.0-alpha.10):
-    - ElasticSwiftCodableUtils (= 1.0.0-alpha.10)
-    - ElasticSwiftCore (= 1.0.0-alpha.10)
-    - Logging (~> 1.1.1)
-  - Logging (1.1.1)
-  - SwiftNIO (2.9.0):
-    - CNIOAtomics (= 2.9.0)
-    - CNIODarwin (= 2.9.0)
-    - CNIOLinux (= 2.9.0)
-    - CNIOSHA1 (= 2.9.0)
-    - SwiftNIOConcurrencyHelpers (= 2.9.0)
-  - SwiftNIOConcurrencyHelpers (2.9.0):
-    - CNIOAtomics (= 2.9.0)
-  - SwiftNIOFoundationCompat (2.9.0):
-    - SwiftNIO (= 2.9.0)
-  - SwiftNIOHTTP1 (2.9.0):
-    - CNIOHTTPParser (= 2.9.0)
-    - SwiftNIO (= 2.9.0)
-    - SwiftNIOConcurrencyHelpers (= 2.9.0)
-  - SwiftNIOTLS (2.9.0):
-    - SwiftNIO (= 2.9.0)
-  - SwiftNIOTransportServices (1.2.0):
+  - CNIOAtomics (2.16.0)
+  - CNIODarwin (2.16.0)
+  - CNIOHTTPParser (2.16.0)
+  - CNIOLinux (2.16.0)
+  - CNIOSHA1 (2.16.0)
+  - ElasticSwift (1.0.0-alpha.11):
+    - ElasticSwiftCodableUtils (= 1.0.0-alpha.11)
+    - ElasticSwiftCore (= 1.0.0-alpha.11)
+    - ElasticSwiftNetworking (= 1.0.0-alpha.11)
+    - ElasticSwiftQueryDSL (= 1.0.0-alpha.11)
+    - Logging (~> 1.2)
+    - SwiftNIO (~> 2.14)
+    - SwiftNIOConcurrencyHelpers (~> 2.14)
+    - SwiftNIOFoundationCompat (~> 2.14)
+    - SwiftNIOHTTP1 (~> 2.14)
+    - SwiftNIOTLS (~> 2.14)
+    - SwiftNIOTransportServices (~> 1.3)
+  - ElasticSwiftCodableUtils (1.0.0-alpha.11)
+  - ElasticSwiftCore (1.0.0-alpha.11):
+    - Logging (~> 1.2)
+    - SwiftNIO (~> 2.14)
+    - SwiftNIOHTTP1 (~> 2.14)
+  - ElasticSwiftNetworking (1.0.0-alpha.11):
+    - ElasticSwiftCore (= 1.0.0-alpha.11)
+    - Logging (~> 1.2)
+    - SwiftNIOHTTP1 (~> 2.14)
+  - ElasticSwiftQueryDSL (1.0.0-alpha.11):
+    - ElasticSwiftCodableUtils (= 1.0.0-alpha.11)
+    - ElasticSwiftCore (= 1.0.0-alpha.11)
+    - Logging (~> 1.2)
+  - Logging (1.2.0)
+  - SwiftNIO (2.16.0):
+    - CNIOAtomics (= 2.16.0)
+    - CNIODarwin (= 2.16.0)
+    - CNIOLinux (= 2.16.0)
+    - CNIOSHA1 (= 2.16.0)
+    - SwiftNIOConcurrencyHelpers (= 2.16.0)
+  - SwiftNIOConcurrencyHelpers (2.16.0):
+    - CNIOAtomics (= 2.16.0)
+  - SwiftNIOFoundationCompat (2.16.0):
+    - SwiftNIO (= 2.16.0)
+  - SwiftNIOHTTP1 (2.16.0):
+    - CNIOHTTPParser (= 2.16.0)
+    - SwiftNIO (= 2.16.0)
+    - SwiftNIOConcurrencyHelpers (= 2.16.0)
+  - SwiftNIOTLS (2.16.0):
+    - SwiftNIO (= 2.16.0)
+  - SwiftNIOTransportServices (1.5.1):
     - SwiftNIO (~> 2.0)
     - SwiftNIOConcurrencyHelpers (~> 2.0)
     - SwiftNIOFoundationCompat (~> 2.0)
     - SwiftNIOTLS (~> 2.0)
 
 DEPENDENCIES:
-  - ElasticSwift (= 1.0.0-alpha.10)
+  - ElasticSwift (~> 1.0.0-alpha.11)
+  - ElasticSwiftCodableUtils (~> 1.0.0-alpha.11)
+  - ElasticSwiftCore (~> 1.0.0-alpha.11)
+  - ElasticSwiftNetworking (~> 1.0.0-alpha.11)
+  - ElasticSwiftQueryDSL (~> 1.0.0-alpha.11)
 
 SPEC REPOS:
   trunk:
@@ -76,24 +80,24 @@ SPEC REPOS:
     - SwiftNIOTransportServices
 
 SPEC CHECKSUMS:
-  CNIOAtomics: 4802160b2255f43193c7ab936997c63cafd574d8
-  CNIODarwin: dfafd4d2e337671aedb512dd5de339b0f324e2f1
-  CNIOHTTPParser: 2d7d56c391819735486928154d70f70e5b36bbf2
-  CNIOLinux: 287ed318589a4fe1854febb0c4e2e81484ec679d
-  CNIOSHA1: a7ca955f1d9404ed051b1c06ec0ab00fdff7e8cf
-  ElasticSwift: 9d2fe7b6a4a16a7982cb25a89f94b8324bb66b29
-  ElasticSwiftCodableUtils: 8698b20fca862aea3f4e5561ec941c41f27f6024
-  ElasticSwiftCore: ae1d4271d5f5f04a70c81663fd6ceddae6cacccc
-  ElasticSwiftNetworking: 70e8c3cae29a2e4130191ae9ecd961e4b4ed4844
-  ElasticSwiftQueryDSL: c9e532582d376730f13003124bf88935b96f2640
-  Logging: c1d514914944d786e0f17a41a6431e44a88a7ec1
-  SwiftNIO: 26c894626b5257824dfbab76efdf10c23803c1e6
-  SwiftNIOConcurrencyHelpers: 0e8fffc1e2a086ba68f8265de62d23f5105e7a00
-  SwiftNIOFoundationCompat: 137b1e061574d75da65366f4d9f5eed282a609da
-  SwiftNIOHTTP1: e478bb9aa44324f5fac302ffb4b5a8fec21aef7a
-  SwiftNIOTLS: bf4f84bdb35b91d93ccc9bdc574b658993eb4b57
-  SwiftNIOTransportServices: 49b863dd9d8583be5cdd798013818378579a7d31
+  CNIOAtomics: d2df68d8f6469d30897eed150d79a35aa109dc6e
+  CNIODarwin: c6f31835da914cc5a4f030c511cd7413e1113987
+  CNIOHTTPParser: 7f83c00a479865e136fbdd08379039c42285bb12
+  CNIOLinux: dba8b97f349e95b55ebc4e0e82c31f4de4c341c4
+  CNIOSHA1: 6923fb2792de9ac1a747324698117db77b44fe8d
+  ElasticSwift: ba66b961a06ee87e05f1f0ad460cbe0ad809fd09
+  ElasticSwiftCodableUtils: aa793b16c7b763deb45a50726743141a4123ec82
+  ElasticSwiftCore: 3cf70dfe6ec8971fbb1875cdcfafa9dd184129e0
+  ElasticSwiftNetworking: bc3bd048d39cce22cf0a321009c73900ceef34ec
+  ElasticSwiftQueryDSL: 54394132dbadd2a540218aa40181ab7014b3ec7c
+  Logging: 7838d379d234d7e5ae1265fa02804a9084caf04c
+  SwiftNIO: 395e7fe1e816009e569dd7d56d920aa077711afa
+  SwiftNIOConcurrencyHelpers: 3e32edd4c090a1ae4eb93bc7fbb3b22a7cb439a9
+  SwiftNIOFoundationCompat: 4552ee8560a7088c7cce84634c2e183d6782bb3e
+  SwiftNIOHTTP1: 61ea14ac9dddc5e8ef6bf544f1498a5e99b6ceb4
+  SwiftNIOTLS: 016043daf381741a5ea5a9bfdd4758845fac88f0
+  SwiftNIOTransportServices: c7d36493d9bd18cbbc0115a1631533dfe1146e97
 
-PODFILE CHECKSUM: dd542e39a73a27839310bb7f6d20ec73538aadcd
+PODFILE CHECKSUM: e7af9f0f9903070a390fb7437a7ade00e5cef414
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1
